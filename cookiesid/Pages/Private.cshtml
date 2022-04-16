@@ -1,0 +1,9 @@
+﻿@page
+@model cookiesid.Pages.PrivateModel
+@{
+       ViewData["Title"] = "Your own page!";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>@(HttpContext.User.Identity?.Name??"unkonwn")</p>

@@ -1,0 +1,21 @@
+{
+  "name": "Cookies Saver",
+  "description": "The power of React and TypeScript for building interactive Chrome extensions",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["https://localhost:7106/*"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Get some cookies"
+  },
+  "icons": {
+    "16": "cookies.png",
+    "48": "cookies.png",
+    "128": "cookies.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"],
+  "web_accessible_resources": []
+}
